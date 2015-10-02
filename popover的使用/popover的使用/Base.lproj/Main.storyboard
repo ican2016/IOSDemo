@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6254" systemVersion="13F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="7b4-5D-5Vx">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
+    </dependencies>
+    <scenes>
+        <!--Navigation Controller-->
+        <scene sceneID="57p-Sa-1gQ">
+            <objects>
+                <navigationController id="7b4-5D-5Vx" sceneMemberID="viewController">
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="2MI-Nl-9HZ">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="3TE-Ty-Kmp" kind="relationship" relationship="rootViewController" id="xKL-HQ-oEO"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="PhJ-0H-OFe" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-439" y="9"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="0yh-DH-hgU">
+            <objects>
+                <viewController id="3TE-Ty-Kmp" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Phk-Nc-R6N"/>
+                        <viewControllerLayoutGuide type="bottom" id="rPa-Hf-7a3"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="ITs-i5-OEQ">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="0.98993421420000005" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="d36-Up-rOZ">
+                        <nil key="title"/>
+                        <barButtonItem key="leftBarButtonItem" title="菜单" id="O7R-MY-cjc">
+                            <connections>
+                                <action selector="meunOption:" destination="3TE-Ty-Kmp" id="NbV-Qw-RIq"/>
+                            </connections>
+                        </barButtonItem>
+                        <button key="titleView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="eon-tc-eHH">
+                            <rect key="frame" x="96" y="7" width="128" height="30"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <state key="normal" title="标题">
+                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <connections>
+                                <action selector="titleMeunOption:" destination="3TE-Ty-Kmp" eventType="touchUpInside" id="Pof-Wt-N8d"/>
+                            </connections>
+                        </button>
+                        <barButtonItem key="rightBarButtonItem" title="其它" id="lUv-xd-CB7"/>
+                    </navigationItem>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="bef-pv-WV5" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="271" y="3"/>
+        </scene>
+    </scenes>
+</document>
