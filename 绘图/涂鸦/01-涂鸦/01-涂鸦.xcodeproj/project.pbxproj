@@ -457,6 +457,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = "01-涂鸦/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "daojiao.com.-1---";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -468,6 +469,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = "01-涂鸦/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "daojiao.com.-1---";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -479,6 +481,7 @@
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				INFOPLIST_FILE = "01-涂鸦Tests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "daojiao.com.-1---Tests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -491,6 +494,7 @@
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				INFOPLIST_FILE = "01-涂鸦Tests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "daojiao.com.-1---Tests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -502,6 +506,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				INFOPLIST_FILE = "01-涂鸦UITests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "daojiao.com.-1---UITests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -514,6 +519,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				INFOPLIST_FILE = "01-涂鸦UITests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "daojiao.com.-1---UITests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -541,6 +547,7 @@
 				18A5C5B41BBD49600056AED6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		18A5C5B51BBD49600056AED6 /* Build configuration list for PBXNativeTarget "01-涂鸦Tests" */ = {
 			isa = XCConfigurationList;
@@ -549,6 +556,7 @@
 				18A5C5B71BBD49600056AED6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		18A5C5B81BBD49600056AED6 /* Build configuration list for PBXNativeTarget "01-涂鸦UITests" */ = {
 			isa = XCConfigurationList;
@@ -557,6 +565,7 @@
 				18A5C5BA1BBD49600056AED6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
