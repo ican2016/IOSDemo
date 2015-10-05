@@ -19,6 +19,7 @@
 - (IBAction)delete;
 - (IBAction)update;
 - (IBAction)query;
+
 @end
 
 @implementation ViewController
@@ -26,21 +27,20 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
 
-    // 1.数据库文件
+    // 1.获取数据库文件
     NSString *fileName = [[NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES) lastObject] stringByAppendingPathComponent:@"student.sqlite"];
-    NSLog(@"fileName %@",fileName);
     
-    // 2.打开数据库
+    // 2.打开数据库（创建数据库实例）
     int result = sqlite3_open(fileName.UTF8String, &_db);
     
     // 3.检查数据库是否正常打开
-    // SQLITE_OK是一个常量，表示数据库能够正常打开
+    // SQLITE_OK是一个常量，表示执行成功
     if (result == SQLITE_OK) {
         
         NSLog(@"成功打开数据库");
         
         // 4.建表
-        // 4.1 生成建表语句
+        // 4.1 生成建表语句（表只会创建一次）
         const char *sql = "create table if not exists s_student(id integer primary key autoincrement,name text,age integer);";
         char *error = NULL;
         // 4.2 执行建表语句
@@ -54,12 +54,11 @@
     }else{
         NSLog(@"打开数据库失败");
     }
-    
 
 }
 
+// 添加数据
 - (IBAction)insert {
-    // 添加一条数据
     // 1.创建sql语句
 //    const char *sql = "insert into s_student(name,age)values('jack',20)";
 //    char *error;
@@ -88,9 +87,10 @@
     
 }
 
+// 删除数据
 - (IBAction)delete {
     
-    // 1.创建sql语句
+    // 1. 删除一条sql语句
     NSString *sql = [NSString stringWithFormat:@"delete from s_student where age=%d ",4];
     char *error = NULL;
     
@@ -106,8 +106,9 @@
     
 }
 
+// 更新一条数据
 - (IBAction)update {
-    // 1. 创建sql语句
+    // 1. 更新一条sql语句
     NSString *sql = [NSString stringWithFormat:@"update s_student set name = '%@' where age = %d",@"李飞",20];
     
     char *error;
@@ -122,8 +123,9 @@
     }
 }
 
+// 查询数据
 - (IBAction)query {
-    // 1.定义sql语句
+    // 1.查询sql语句
     NSString *sql = @"select id,name,age from s_student where age = ?";
     
     // 2 定义一个sqlite3_stem存放数据结果集
@@ -149,7 +151,6 @@
     }else{
         NSLog(@" 查询语法不合法");
     }
-    
 }
 
 - (void)dealloc
