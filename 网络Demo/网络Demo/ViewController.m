@@ -29,6 +29,7 @@
     self.tableView.dataSource = self;
     self.tableView.delegate = self;
     
+  
     [UserWithModel queryAllUser:^(id data) {
         self.userData = data;
     }];
@@ -69,14 +70,56 @@
                     self.promptMessageLabel.text = data;
             }];
             return;
+
         }
     }];
+//     [UIView animateWithDuration:2.0f animations:^{
+//         [UIView setAnimationTransition:UIViewAnimationTransitionCurlUp forView:self.view cache:YES];
+//     }];
     
-
-    [self.tableView reloadData];
-
+    [UIView beginAnimations:@"doflip" context:nil];
+    //设置时常
+    [UIView setAnimationDuration:2.0f];
+    //设置动画淡入淡出
+    [UIView setAnimationCurve:UIViewAnimationCurveEaseInOut];
+    //设置代理
+    [UIView setAnimationDelegate:self];
+    //设置翻转方向
+      [UIView setAnimationTransition:UIViewAnimationTransitionCurlUp forView:self.view cache:YES];
+    //动画结束
+    [UIView commitAnimations];
+    
+    [self initScaleLayer];
+    
+    [self addBackgroundImage];
 }
 
+- (void)addBackgroundImage
+{
+    self.view.backgroundColor = [UIColor colorWithPatternImage:[UIImage imageNamed:@"12.jpgs"]];
+}
+
+- (void)initScaleLayer
+{
+    //演员初始化
+    CALayer *scaleLayer = [[CALayer alloc] init];
+    scaleLayer.backgroundColor = [UIColor blueColor].CGColor;
+    scaleLayer.frame = CGRectMake(10, 40 , 20 , 20);
+    scaleLayer.cornerRadius = 10;
+    [self.view.layer addSublayer:scaleLayer];
+
+    //设定剧本
+    CABasicAnimation *scaleAnimation = [CABasicAnimation animationWithKeyPath:@"transform.scale"];
+    scaleAnimation.fromValue = [NSNumber numberWithFloat:1.0];
+    scaleAnimation.toValue = [NSNumber numberWithFloat:1.5];
+    scaleAnimation.autoreverses = YES;
+    scaleAnimation.fillMode = kCAFillModeForwards;
+    scaleAnimation.repeatCount = MAXFLOAT;
+    scaleAnimation.duration = 0.8;
+    
+    //开演
+    [scaleLayer addAnimation:scaleAnimation forKey:@"scaleAnimation"];
+}
 
 //－－－－－－－－－随机数－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－
 - (void)data

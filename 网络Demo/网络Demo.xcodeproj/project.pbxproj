@@ -18,6 +18,7 @@
 		18525B2F1BC785F5004C73D7 /* User.m in Sources */ = {isa = PBXBuildFile; fileRef = 18525B2E1BC785F5004C73D7 /* User.m */; settings = {ASSET_TAGS = (); }; };
 		18525B321BC78746004C73D7 /* UserWithModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 18525B311BC78746004C73D7 /* UserWithModel.m */; settings = {ASSET_TAGS = (); }; };
 		18525B3A1BC79382004C73D7 /* JSONKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 18525B391BC79382004C73D7 /* JSONKit.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		18F974551BCBC54A00ABBA53 /* 12.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 18F974541BCBC54A00ABBA53 /* 12.jpg */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -60,6 +61,7 @@
 		18525B311BC78746004C73D7 /* UserWithModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserWithModel.m; sourceTree = "<group>"; };
 		18525B381BC79382004C73D7 /* JSONKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSONKit.h; sourceTree = "<group>"; };
 		18525B391BC79382004C73D7 /* JSONKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSONKit.m; sourceTree = "<group>"; };
+		18F974541BCBC54A00ABBA53 /* 12.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 12.jpg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -126,6 +128,7 @@
 		18525AE41BC62F45004C73D7 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				18F974541BCBC54A00ABBA53 /* 12.jpg */,
 				18525AE51BC62F45004C73D7 /* main.m */,
 			);
 			name = "Supporting Files";
@@ -299,6 +302,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				18525AF41BC62F45004C73D7 /* LaunchScreen.storyboard in Resources */,
+				18F974551BCBC54A00ABBA53 /* 12.jpg in Resources */,
 				18525AF11BC62F45004C73D7 /* Assets.xcassets in Resources */,
 				18525AEF1BC62F45004C73D7 /* Main.storyboard in Resources */,
 			);

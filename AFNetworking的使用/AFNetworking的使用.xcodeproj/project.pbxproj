@@ -32,6 +32,9 @@
 		181123131BC5273E00A9D657 /* UIProgressView+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = 181123091BC5273E00A9D657 /* UIProgressView+AFNetworking.m */; settings = {ASSET_TAGS = (); }; };
 		181123141BC5273E00A9D657 /* UIRefreshControl+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = 1811230B1BC5273E00A9D657 /* UIRefreshControl+AFNetworking.m */; settings = {ASSET_TAGS = (); }; };
 		181123151BC5273E00A9D657 /* UIWebView+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = 1811230D1BC5273E00A9D657 /* UIWebView+AFNetworking.m */; settings = {ASSET_TAGS = (); }; };
+		18F9745B1BCBC95800ABBA53 /* CHANGELOG.md in Sources */ = {isa = PBXBuildFile; fileRef = 18F974571BCBC95800ABBA53 /* CHANGELOG.md */; settings = {ASSET_TAGS = (); }; };
+		18F9745C1BCBC95800ABBA53 /* JSONKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 18F974591BCBC95800ABBA53 /* JSONKit.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		18F9745D1BCBC95800ABBA53 /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = 18F9745A1BCBC95800ABBA53 /* README.md */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -105,6 +108,10 @@
 		1811230B1BC5273E00A9D657 /* UIRefreshControl+AFNetworking.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIRefreshControl+AFNetworking.m"; sourceTree = "<group>"; };
 		1811230C1BC5273E00A9D657 /* UIWebView+AFNetworking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIWebView+AFNetworking.h"; sourceTree = "<group>"; };
 		1811230D1BC5273E00A9D657 /* UIWebView+AFNetworking.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIWebView+AFNetworking.m"; sourceTree = "<group>"; };
+		18F974571BCBC95800ABBA53 /* CHANGELOG.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = CHANGELOG.md; sourceTree = "<group>"; };
+		18F974581BCBC95800ABBA53 /* JSONKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSONKit.h; sourceTree = "<group>"; };
+		18F974591BCBC95800ABBA53 /* JSONKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSONKit.m; sourceTree = "<group>"; };
+		18F9745A1BCBC95800ABBA53 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -155,6 +162,7 @@
 		181122AA1BC5146B00A9D657 /* AFNetworking的使用 */ = {
 			isa = PBXGroup;
 			children = (
+				18F974561BCBC95800ABBA53 /* JSONKit-master */,
 				181122FB1BC5273E00A9D657 /* UIKit+AFNetworking */,
 				181122DE1BC5156300A9D657 /* AFNetworking */,
 				181122AE1BC5146B00A9D657 /* AppDelegate.h */,
@@ -246,6 +254,17 @@
 			);
 			name = "UIKit+AFNetworking";
 			path = "AFNetworking/UIKit+AFNetworking";
+			sourceTree = "<group>";
+		};
+		18F974561BCBC95800ABBA53 /* JSONKit-master */ = {
+			isa = PBXGroup;
+			children = (
+				18F974571BCBC95800ABBA53 /* CHANGELOG.md */,
+				18F974581BCBC95800ABBA53 /* JSONKit.h */,
+				18F974591BCBC95800ABBA53 /* JSONKit.m */,
+				18F9745A1BCBC95800ABBA53 /* README.md */,
+			);
+			path = "JSONKit-master";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -386,8 +405,10 @@
 				181122F51BC5156300A9D657 /* AFNetworkReachabilityManager.m in Sources */,
 				181122F91BC5156300A9D657 /* AFURLResponseSerialization.m in Sources */,
 				181122F71BC5156300A9D657 /* AFURLConnectionOperation.m in Sources */,
+				18F9745D1BCBC95800ABBA53 /* README.md in Sources */,
 				181123111BC5273E00A9D657 /* UIButton+AFNetworking.m in Sources */,
 				1811230F1BC5273E00A9D657 /* UIActivityIndicatorView+AFNetworking.m in Sources */,
+				18F9745C1BCBC95800ABBA53 /* JSONKit.m in Sources */,
 				181122F61BC5156300A9D657 /* AFSecurityPolicy.m in Sources */,
 				181123141BC5273E00A9D657 /* UIRefreshControl+AFNetworking.m in Sources */,
 				181123151BC5273E00A9D657 /* UIWebView+AFNetworking.m in Sources */,
@@ -397,6 +418,7 @@
 				1811230E1BC5273E00A9D657 /* AFNetworkActivityIndicatorManager.m in Sources */,
 				181122FA1BC5156300A9D657 /* AFURLSessionManager.m in Sources */,
 				181122B01BC5146B00A9D657 /* AppDelegate.m in Sources */,
+				18F9745B1BCBC95800ABBA53 /* CHANGELOG.md in Sources */,
 				181122AD1BC5146B00A9D657 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
