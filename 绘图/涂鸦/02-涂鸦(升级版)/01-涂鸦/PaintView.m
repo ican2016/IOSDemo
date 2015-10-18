@@ -73,6 +73,7 @@
 - (void)setLineWight:(int)lineWight
 {
     _lineWight = lineWight;
+    NSLog(@"%d",lineWight);
     [self setNeedsDisplay];
 }
 
